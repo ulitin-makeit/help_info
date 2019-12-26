@@ -18,3 +18,7 @@ innodb_strict_mode=OFF
 
 Перезапуск slq
 systemctl restart mysql.service
+
+Ошибка pcre.recursion_limit
+В настройка php установить
+pcre.jit = 0
