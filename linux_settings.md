@@ -16,6 +16,17 @@ systemctl restart apache2
 sql_mode=
 innodb_strict_mode=OFF
 
+примр файла
+
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mysql.conf.d
+[mysqld]
+local-infile=0
+sql_mode=
+innodb_strict_mode=OFF
+
+
+
 Перезапуск slq
 systemctl restart mysql.service
 
