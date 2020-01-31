@@ -33,3 +33,6 @@ systemctl restart mysql.service
 Ошибка pcre.recursion_limit
 В настройка php установить
 pcre.jit = 0
+
+Редирект на https
+с добавлением слеша в конце
