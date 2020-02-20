@@ -36,3 +36,10 @@ pcre.jit = 0
 
 Редирект на https
 с добавлением слеша в конце
+
+<VirtualHost 82.146.60.41:80>
+	ServerName site.ru
+	ServerAlias www.site.ru
+	RedirectMatch permanent ^(.*[^\/])$ https://site.ru$1/
+	RedirectMatch permanent ^/(.*)$ https://site.ru/$1
+</VirtualHost>
