@@ -43,3 +43,10 @@ pcre.jit = 0
 	RedirectMatch permanent ^(.*[^\/])$ https://site.ru$1/
 	RedirectMatch permanent ^/(.*)$ https://site.ru/$1
 </VirtualHost>
+
+Редиректы nginx
+server {
+	listen 5.253.60.226:80;
+	server_name woodworkspb.ru www.woodworkspb.ru;
+	rewrite ^(.*[^\/])? https://www.woodworkspb.ru$1/ permanent;
+}
