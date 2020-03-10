@@ -11,6 +11,8 @@ systemctl restart apache2
 
 Настройки sql (Ubuntu)
 /etc/mysql/my.cnf
+Настройка Bitrix VM
+/etc/my.cnf
 
 [mysqld]
 sql_mode=
