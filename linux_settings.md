@@ -1,54 +1,61 @@
-Включение и выключение модулей apache
+###Включение и выключение модулей apache
+*
+Зачастую нужно на серверах ubuntu
+У битрикса свои технологии безопасности
+*
 
 Включение модуля
-a2enmod dav
+**a2enmod dav**
 
 Выключенеие модуля
-a2dismod dav
+**a2dismod dav**
 
 Рестарт apache
-systemctl restart apache2
+`systemctl restart apache2`
 
-Настройки sql (Ubuntu)
-/etc/mysql/my.cnf
-Настройка Bitrix VM
-/etc/my.cnf
+------------
 
+
+###Настройки sql
+
+**Ubuntu** `/etc/mysql/my.cnf`
+
+**Настройка Bitrix VM** `/etc/my.cnf`
+
+```
 [mysqld]
-sql_mode=
-innodb_strict_mode=OFF
+innodb_strict_mode = OFF
+```
 
-примр файла
+**Перезапуск slq**
+`systemctl restart mysql.service`
 
-!includedir /etc/mysql/conf.d/
-!includedir /etc/mysql/mysql.conf.d
-[mysqld]
-local-infile=0
-sql_mode=
-innodb_strict_mode=OFF
+------------
 
-
-
-Перезапуск slq
-systemctl restart mysql.service
-
-Ошибка pcre.recursion_limit
+###Ошибка pcre.recursion_limit
 В настройка php установить
-pcre.jit = 0
+`pcre.jit = 0`
 
-Редирект на https
-с добавлением слеша в конце
+------------
 
+
+###Редирект на https с добавлением слеша в конце
+
+**Apache**
+```
 <VirtualHost 82.146.60.41:80>
 	ServerName site.ru
 	ServerAlias www.site.ru
 	RedirectMatch permanent ^(.*[^\/])$ https://site.ru$1/
 	RedirectMatch permanent ^/(.*)$ https://site.ru/$1
 </VirtualHost>
+```
 
-Редиректы nginx
+**Nginx**
+```
 server {
 	listen 5.253.60.226:80;
 	server_name woodworkspb.ru www.woodworkspb.ru;
 	rewrite ^(.*[^\/])? https://www.woodworkspb.ru$1/ permanent;
 }
+```
