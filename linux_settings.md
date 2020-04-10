@@ -58,3 +58,11 @@ server {
 	rewrite ^(.*[^\/])? https://www.woodworkspb.ru$1/ permanent;
 }
 ```
+
+------------
+
+
+### Пути на виртуальной машине bitrix
+
+Настройки mysql `/etc/mysql/conf.d/z_bx_custom.cnf`
+Модули Apache `/etc/php.d`
