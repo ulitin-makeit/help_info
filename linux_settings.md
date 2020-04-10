@@ -64,5 +64,6 @@ server {
 
 ### Пути на виртуальной машине bitrix
 
-Настройки mysql `/etc/mysql/conf.d/z_bx_custom.cnf`
-Модули Apache `/etc/php.d`
+Настройки mysql `/etc/mysql/conf.d/z_bx_custom.cnf` 
+
+Модули Apache `/etc/php.d` 
