@@ -4,4 +4,4 @@ find . -name "install" -type d -exec rm -r "{}" \;
 
 find . -type d -empty -delete
 
-tar -xf archive.tar
+tar -xvf archive.tar
