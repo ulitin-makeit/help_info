@@ -62,6 +62,15 @@ server {
 ------------
 
 
+### Изменения языка консоли CentOS 7 на UTF-8 RU
+
+Меняем язык `localectl set-locale LANG=ru_RU.UTF-8` 
+
+Перезагружаем сервер `reboot` 
+
+------------
+
+
 ### Пути на виртуальной машине bitrix
 
 Настройки mysql `/etc/mysql/conf.d/z_bx_custom.cnf` 
