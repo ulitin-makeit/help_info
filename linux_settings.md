@@ -76,3 +76,11 @@ server {
 Настройки mysql `/etc/mysql/conf.d/z_bx_custom.cnf` 
 
 Модули Apache `/etc/php.d` 
+
+
+### Настройки xdebug на локальной машине
+```
+zend_extension=xdebug.so
+xdebug.remote_enable=on
+xdebug.remote_connect_back=on
+```
