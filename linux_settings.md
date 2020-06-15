@@ -94,7 +94,7 @@ xdebug.remote_enable=on
 xdebug.remote_connect_back=on
 ```
 
-##### на удалённом сервере
+#### на удалённом сервере
 
 file **15-xdebug.ini**
 
