@@ -79,6 +79,8 @@ server {
 
 
 ### Настройки xdebug на локальной машине
+`/etc/php.d/15-xdebug.ini`
+
 ```
 zend_extension=xdebug.so
 xdebug.remote_enable=on
