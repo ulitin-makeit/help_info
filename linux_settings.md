@@ -86,3 +86,5 @@ zend_extension=xdebug.so
 xdebug.remote_enable=on
 xdebug.remote_connect_back=on
 ```
+
+проброс тунеля на удалённый сервер `ssh -R 83.220.172.223:9000:127.0.0.1:9000 root@83.220.172.223`
