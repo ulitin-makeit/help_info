@@ -13,6 +13,7 @@ $item->setFields(
         'CUSTOM_PRICE' => 'Y',
         // Если не указать PRODUCT_PROVIDER_CLASS то при оформлении заказа
         // не будет происходить резервирование товара и вычитание остатков
+        // так же у товара в корзине не будет названия
         'PRODUCT_PROVIDER_CLASS' => '\CCatalogProductProvider'
     ]
 );
