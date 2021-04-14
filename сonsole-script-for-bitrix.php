@@ -1,11 +1,11 @@
 <?php
 
 // Запрет сбора статистики
-define(NO_KEEP_STATISTIC, true);
+define('NO_KEEP_STATISTIC', true);
 // Отключение проверки прав на доступ к файлам и каталогам
-define(NOT_CHECK_PERMISSIONS, true);
+define('NOT_CHECK_PERMISSIONS', true);
 // Установка id сайта
-define(LID, 's1');
+define('LID', 's1');
 
 $_SERVER['DOCUMENT_ROOT'] = '/home/bitrix/www';
 
