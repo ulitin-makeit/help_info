@@ -62,13 +62,23 @@ server {
 ------------
 
 
-### Изменения языка консоли CentOS 7 на UTF-8 RU
+### Очистка boot раздела СentOS 7
 
-Меняем язык `localectl set-locale LANG=ru_RU.UTF-8` 
-
-Перезагружаем сервер `reboot` 
+Чтобы безопасно очистить от лишнего раздел /boot и не допустить его дальнейшего переполнения, необходимо проделать следующее:
+1. Отредактируем /etc/yum.conf и установим:  
+`installonly_limit=2`  
+Это заставит пакетный менеджер держать только 2 последних ядра, включая используемое.
+2. Оставим yum-utils и удалим старые ядра:  
+`yum install yum-utils`  
+`package-cleanup --oldkernels --count=2`
 
 ------------
+
+
+### Обновление до BitrixVm 7.5  
+
+1) консоль: `yum clean all && yum update`  
+2) меню машины: `2. Configure localhost settings -> 6. Update server`
 
 
 ### Пути на виртуальной машине bitrix
