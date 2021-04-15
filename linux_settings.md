@@ -72,13 +72,12 @@ server {
 `yum install yum-utils`  
 `package-cleanup --oldkernels --count=2`
 
-------------
-
-
 ### Обновление до BitrixVm 7.5  
 
 1) консоль: `yum clean all && yum update`  
 2) меню машины: `2. Configure localhost settings -> 6. Update server`
+
+------------
 
 
 ### Пути на виртуальной машине bitrix
