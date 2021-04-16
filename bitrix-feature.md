@@ -19,3 +19,17 @@ $item->setFields(
 );
 ```
 ------------
+
+### Получение сущности hlblock по названию таблицы
+
+```php
+<?
+$propHlBlockInfo = HighloadBlockTable::getList(
+	[
+		'filter' => ['=TABLE_NAME' => $prop['USER_TYPE_SETTINGS']['TABLE_NAME']]
+	]
+)
+	->fetch();
+
+$propClass = HighloadBlockTable::compileEntity($propHlBlockInfo)->getDataClass();
+```
