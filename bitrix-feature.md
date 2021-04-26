@@ -32,3 +32,9 @@ $propHlBlockInfo = HighloadBlockTable::getList(
 
 $propClass = HighloadBlockTable::compileEntity($propHlBlockInfo)->getDataClass();
 ```
+------------
+CIBlock::ReplaceDetailUrl($arSection['SECTION_PAGE_URL'], $arSection, false, 'S');
+}
+
+
+USER_TYPE = 'directory' значение указывает что свойства  справочник
